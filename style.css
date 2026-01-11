@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #5b2cff, #1e90ff);
+  color: #ffffff;
+  padding-top: 90px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 40px;
+  background: rgba(20, 20, 60, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 14px;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.tg-mini {
+  padding: 8px 18px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  margin-top: 14px;
+  opacity: 0.9;
+}
+
+.main-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 36px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 34px;
+}
+
+/* ===== PRICES ===== */
+.prices {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.price-card {
+  width: 240px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ===== PORTFOLIO ===== */
+.grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* ===== CONTACTS ===== */
+.tg-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 16px 36px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.trust {
+  margin-top: 30px;
+  list-style: none;
+}
+
+.trust li {
+  margin: 8px 0;
+}
